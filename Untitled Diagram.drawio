@@ -4,7 +4,38 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Banco" value="Banco&#xa;&#xa;&#xa;codigo_banco (PK)&#xa;nome&#xa;endereco" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=80;swimlaneFillColor=#ffffff;collapsible=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Agencia" value="Agencia&#xa;&#xa;&#xa;numero_agencia (PK)&#xa;endereco&#xa;codigo_banco (FK)" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=80;swimlaneFillColor=#ffffff;collapsible=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente" value="Cliente&#xa;&#xa;&#xa;cpf (PK)&#xa;nome&#xa;endereco&#xa;telefone" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=80;swimlaneFillColor=#ffffff;collapsible=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Conta" value="Conta&#xa;&#xa;&#xa;numero_conta (PK)&#xa;tipo_conta&#xa;saldo&#xa;cpf (FK)&#xa;numero_agencia (FK)" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=80;swimlaneFillColor=#ffffff;collapsible=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="140" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Emprestimo" value="Emprestimo&#xa;&#xa;&#xa;numero_emprestimo (PK)&#xa;valor&#xa;cpf (FK)&#xa;numero_agencia (FK)" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=80;swimlaneFillColor=#ffffff;collapsible=0;expand=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel_Banco_Agencia" edge="1" source="Banco" target="Agencia" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel_Agencia_Conta" edge="1" source="Agencia" target="Conta" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel_Cliente_Conta" edge="1" source="Cliente" target="Conta" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel_Agencia_Emprestimo" edge="1" source="Agencia" target="Emprestimo" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rel_Cliente_Emprestimo" edge="1" source="Cliente" target="Emprestimo" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
 </mxfile>
+
