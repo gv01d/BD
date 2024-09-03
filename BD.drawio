@@ -49,8 +49,8 @@
         <mxCell id="Y88MpT-qXGYh5XHyNv_k-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;strokeColor=default;endArrow=classic;endFill=1;startArrow=classic;startFill=1;" parent="1" source="Y88MpT-qXGYh5XHyNv_k-11" target="Y88MpT-qXGYh5XHyNv_k-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EYnm4gN95Ds6ZYxXtvYb-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="480" width="120" height="60" as="geometry" />
+        <mxCell id="EYnm4gN95Ds6ZYxXtvYb-2" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Cliente&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="480" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
